@@ -7,11 +7,11 @@ output "private-cidr" {
 }
 
 output "private-subnets" {
-  value = aws_subnet.private[*].id
+  value = aws_subnet.main-private[*].id
 }
 
 output "public-subnets" {
-  value = aws_subnet.public[*].id
+  value = aws_subnet.main-public[*].id
 }
 
 output "vpc" {

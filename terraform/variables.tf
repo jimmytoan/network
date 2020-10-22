@@ -15,6 +15,6 @@ variable "private_subnets" {
 }
 
 variable "cluster-name" {
-  type    = "string"
+  type    = string
   default = "demo"
 }
