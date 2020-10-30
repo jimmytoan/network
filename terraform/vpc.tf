@@ -28,6 +28,7 @@ resource "aws_subnet" "main-public" {
   tags = {
     "Name"                                      = "main-public-subnet"
     "kubernetes.io/cluster/${var.cluster-name}" = "shared"
+    "kubernetes.io/role/elb"     = "1"
   }
 }
 
